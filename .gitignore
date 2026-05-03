@@ -1,0 +1,31 @@
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Secrets - ne JAMAIS pousser de mots de passe ou cles
+*.key
+*.pem
+*.pfx
+secrets.txt
+.env.local
+**/passwords.txt
+
+# Archives temporaires (on genere le zip de rendu manuellement a la fin)
+*.zip
+*.tar.gz
+*.7z
+
+# Fichiers temporaires
+*.tmp
+*.log
+*.bak
+
+# ISO Proxmox (trop gros pour Git, on les garde local)
+*.iso
