@@ -1,0 +1,30 @@
+# ===================================================================
+# .gitattributes — Configuration GitHub Linguist
+# Objectif : afficher uniquement le code écrit par l'auteur dans les stats
+# ===================================================================
+
+# --- Applications tierces (PoC infrastructure LPIC2 ESGI) ---
+# Passbolt, Firefly III, AdGuard sont des solutions open source intégrées
+# pour le PoC d'infrastructure ; leur code source n'est pas le mien.
+
+# Fichiers PHP des applications tierces (Passbolt, Firefly III)
+*.php          linguist-vendored
+*.phtml        linguist-vendored
+
+# Fichiers Hack (souvent confondus avec PHP par Linguist)
+*.hack         linguist-vendored
+*.hh           linguist-vendored
+
+# Configs Windows et scripts batch divers
+*.bat          linguist-vendored
+*.cmd          linguist-vendored
+
+# Dossiers vendor / dépendances classiques
+vendor/**          linguist-vendored
+node_modules/**    linguist-vendored
+dist/**            linguist-generated
+build/**           linguist-generated
+
+# Documentation (incluse mais non comptée comme code)
+*.md           linguist-documentation
+*.rst          linguist-documentation
